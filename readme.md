@@ -18,7 +18,8 @@
 ## 추가 해보면 재밌을 것 같은 기능
 - excalidraw에서 web에서 링크 공유해서 서로 연동하는 기능
 # DB 정의
-#   API 명세
+
+![img.png](img.png)
 ```mermaid
 erDiagram
     USER {
@@ -71,3 +72,13 @@ erDiagram
     USER ||--o{ FRIEND : "receives"
 
 ```
+
+#   API 명세
+
+docs/api.md 참고
+
+# 기술 스택
+- springboot
+- mysql
+- gradle
+- docker(사용하고 싶다...)
