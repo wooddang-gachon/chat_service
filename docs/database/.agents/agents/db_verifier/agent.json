@@ -1,0 +1,9 @@
+{
+  "name": "db_verifier",
+  "description": "데이터베이스 스키마와 인덱스 구조를 검토하기 위해 하위 전문 서브에이전트들을 병렬로 호출 및 조율하여, 종합 컨설팅 리포트를 유저에게 제공하는 DB 오케스트레이터 에이전트입니다.",
+  "tools": {
+    "enable_write_tools": false, -- 메인 조율자 역시 조회 위주의 Read-Only 상태 유지
+    "enable_subagent_tools": true, -- [멀티에이전트 활성화] 하위 에이전트를 정의하고 호출할 수 있는 권한 부여
+    "enable_mcp_tools": true
+  }
+}

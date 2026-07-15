@@ -1,0 +1,309 @@
+// 카카오톡 DBML 스펙 정의서
+
+Table user {
+  id bigint [pk, increment]
+  phone_number varchar(50) [not null, unique, note: '국가코드 포함. 탈퇴 시 마스킹']
+  email varchar(100) [unique]
+  birth_date date [note: '생년월일 (연도 미필터링 대비)']
+  status varchar(20) [not null, default: 'ACTIVE']
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+}
+
+Table profile {
+  user_id bigint [pk, note: '1:1 매핑']
+  nickname varchar(50) [not null]
+  profile_image_url varchar(255)
+  profile_thumbnail_url varchar(255)
+  background_image_url varchar(255)
+  status_message varchar(255)
+  profile_changed_at timestamp [default: `now()`, note: '최근 프로필 업데이트 시각']
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+}
+
+Table user_device {
+  user_id bigint [pk]
+  device_uuid varchar(100) [not null]
+  os_type varchar(20) [not null]
+  session_token varchar(255) [not null]
+  last_login_at timestamp [default: `now()`]
+}
+
+Table user_backup {
+  id bigint [pk, increment]
+  user_id bigint [not null]
+  backup_data_url varchar(255) [not null]
+  auth_key_hash varchar(255) [not null]
+  expires_at timestamp [not null, note: '14일 유효 기간']
+  created_at timestamp [default: `now()`]
+}
+
+Table friendship {
+  user_id bigint [not null]
+  friend_user_id bigint [not null]
+  status varchar(20) [not null, default: 'NORMAL', note: 'NORMAL, FAVORITE, HIDDEN, BLOCKED_MSG, BLOCKED_ALL']
+  is_favorite tinyint [not null, default: 0]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+
+  Indexes {
+    (user_id, friend_user_id) [pk]
+  }
+}
+
+Table multi_profile {
+  id bigint [pk, increment]
+  user_id bigint [not null]
+  nickname varchar(50) [not null]
+  profile_image_url varchar(255)
+  profile_thumbnail_url varchar(255)
+  background_image_url varchar(255)
+  status_message varchar(255)
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+}
+
+Table multi_profile_friend {
+  id bigint [pk, increment]
+  multi_profile_id bigint [not null]
+  friend_user_id bigint [not null]
+  created_at timestamp [default: `now()`]
+}
+
+Table chat_room {
+  id bigint [not null]
+  type varchar(20) [not null, note: 'ME, DOUBLE, GROUP, OPEN_DOUBLE, OPEN_GROUP']
+  created_at timestamp [default: `now()`]
+
+  Indexes {
+    (id, type) [pk]
+  }
+}
+
+Table open_chat_room {
+  chat_room_id bigint [pk]
+  chat_room_type varchar(20) [not null]
+  owner_user_id bigint [not null]
+  passcode varchar(50)
+  max_members_count int [not null, default: 100]
+}
+
+Table chat_room_member {
+  chat_room_id bigint [not null]
+  user_id bigint [not null]
+  nickname varchar(50)
+  profile_image_url varchar(255)
+  joined_at timestamp [default: `now()`]
+  leaved_at timestamp
+  cleared_at timestamp
+  role varchar(20) [not null, default: 'MEMBER', note: 'OWNER, MANAGER, MEMBER']
+
+  Indexes {
+    (chat_room_id, user_id) [pk]
+  }
+}
+
+Table chat_room_setting {
+  chat_room_id bigint [not null]
+  user_id bigint [not null]
+  is_alarm_on tinyint [not null, default: 1]
+  is_pinned tinyint [not null, default: 0]
+  pin_order int [not null, default: 0]
+  custom_background_url varchar(255)
+  is_input_locked tinyint [not null, default: 0]
+
+  Indexes {
+    (chat_room_id, user_id) [pk]
+  }
+}
+
+Table message {
+  id bigint [not null]
+  chat_room_id bigint [not null]
+  sender_user_id bigint [note: '탈퇴 시 null']
+  content text
+  type varchar(20) [not null, note: 'TEXT, EMOTICON, MEDIA, etc.']
+  parent_message_id bigint
+  is_edited tinyint [not null, default: 0]
+  last_edited_at timestamp
+  client_message_token varchar(100)
+  created_at timestamp [not null, default: `now()`, note: 'Range Partition Key']
+
+  Indexes {
+    (id, created_at) [pk]
+  }
+}
+
+Table message_edit_history {
+  id bigint [pk, increment]
+  message_id bigint [not null]
+  original_content text [not null]
+  edited_at timestamp [default: `now()`]
+}
+
+Table message_read {
+  chat_room_id bigint [not null]
+  user_id bigint [not null]
+  last_read_message_id bigint [not null]
+
+  Indexes {
+    (chat_room_id, user_id) [pk]
+  }
+}
+
+Table open_chat_blacklist {
+  id bigint [pk, increment]
+  chat_room_id bigint [not null]
+  blocked_user_id bigint [not null]
+  created_at timestamp [default: `now()`]
+}
+
+Table emoticon_pack {
+  id bigint [pk, increment]
+  pack_name varchar(100) [not null]
+  publisher varchar(100) [not null]
+  created_at timestamp [default: `now()`]
+}
+
+Table emoticon {
+  id bigint [not null]
+  type varchar(20) [not null, note: 'DEFAULT, STORE, MINI']
+  name varchar(100) [not null]
+  created_at timestamp [default: `now()`]
+
+  Indexes {
+    (id, type) [pk]
+  }
+}
+
+Table store_emoticon {
+  emoticon_id bigint [pk]
+  emoticon_type varchar(20) [not null]
+  emoticon_pack_id bigint [not null]
+  price_amount decimal(10,2) [not null]
+  image_url varchar(255) [not null]
+  audio_url varchar(255)
+}
+
+Table mini_emoticon {
+  emoticon_id bigint [pk]
+  emoticon_type varchar(20) [not null]
+  mapping_code varchar(100) [not null, unique]
+  image_url varchar(255) [not null]
+}
+
+Table user_emoticon_license {
+  id bigint [pk, increment]
+  user_id bigint [not null]
+  emoticon_id bigint [not null]
+  license_type varchar(20) [not null, note: 'PURCHASE, SUBSCRIPTION']
+  acquired_at timestamp [default: `now()`]
+  expires_at timestamp
+}
+
+Table calendar_event {
+  id bigint [pk, increment]
+  chat_room_id bigint [not null]
+  title varchar(100) [not null]
+  description text
+  start_at timestamp [not null]
+  end_at timestamp [not null]
+  location varchar(255)
+  created_by_user_id bigint [not null]
+  created_at timestamp [default: `now()`]
+}
+
+Table calendar_attendee {
+  calendar_event_id bigint [not null]
+  user_id bigint [not null]
+  status varchar(20) [not null, default: 'TENTATIVE', note: 'ACCEPTED, DECLINED, TENTATIVE']
+
+  Indexes {
+    (calendar_event_id, user_id) [pk]
+  }
+}
+
+Table media_file {
+  id bigint [pk, increment]
+  message_id bigint [not null]
+  file_type varchar(20) [not null]
+  file_size_bytes bigint [not null]
+  original_url varchar(255) [not null]
+  thumbnail_url varchar(255)
+  expires_at timestamp
+  created_at timestamp [default: `now()`]
+}
+
+Table business_message {
+  id bigint [not null]
+  partner_id bigint [not null]
+  recipient_phone_number varchar(50) [not null]
+  template_id bigint [not null]
+  sent_at timestamp [not null, default: `now()`]
+  delivery_status varchar(20) [not null, default: 'SENT']
+  delivery_carrier varchar(20)
+  delivery_confirmed_at timestamp
+
+  Indexes {
+    (id, sent_at) [pk]
+  }
+}
+
+Table gift_coupon {
+  id bigint [pk, increment]
+  coupon_code varchar(100) [not null, unique]
+  sender_user_id bigint [not null]
+  receiver_user_id bigint [not null]
+  product_id bigint [not null]
+  status varchar(20) [not null, default: 'WAITING_RECEIVE']
+  price_amount decimal(10,2) [not null]
+  refund_recipient_role varchar(20) [not null]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+}
+
+Table gift_coupon_history {
+  id bigint [pk, increment]
+  gift_coupon_id bigint [not null]
+  status_from varchar(20) [not null]
+  status_to varchar(20) [not null]
+  transaction_identifier varchar(100)
+  changed_at timestamp [default: `now()`]
+}
+
+// 외래 키 관계성 매핑
+
+Ref: profile.user_id - user.id
+Ref: user_device.user_id - user.id
+Ref: user_backup.user_id > user.id
+Ref: friendship.user_id > user.id
+Ref: friendship.friend_user_id > user.id
+Ref: multi_profile.user_id > user.id
+Ref: multi_profile_friend.multi_profile_id > multi_profile.id
+Ref: multi_profile_friend.friend_user_id > user.id
+Ref: open_chat_room.chat_room_id - chat_room.id
+Ref: open_chat_room.owner_user_id > user.id
+Ref: chat_room_member.chat_room_id > chat_room.id
+Ref: chat_room_member.user_id > user.id
+Ref: chat_room_setting.chat_room_id > chat_room.id
+Ref: chat_room_setting.user_id > user.id
+Ref: message.chat_room_id > chat_room.id
+Ref: message.sender_user_id > user.id
+Ref: message.parent_message_id > message.id
+Ref: message_edit_history.message_id > message.id
+Ref: message_read.chat_room_id > chat_room.id
+Ref: message_read.user_id > user.id
+Ref: open_chat_blacklist.blocked_user_id > user.id
+Ref: store_emoticon.emoticon_id - emoticon.id
+Ref: store_emoticon.emoticon_pack_id > emoticon_pack.id
+Ref: mini_emoticon.emoticon_id - emoticon.id
+Ref: user_emoticon_license.user_id > user.id
+Ref: user_emoticon_license.emoticon_id > emoticon.id
+Ref: calendar_event.created_by_user_id > user.id
+Ref: calendar_attendee.calendar_event_id > calendar_event.id
+Ref: calendar_attendee.user_id > user.id
+Ref: media_file.message_id > message.id
+Ref: gift_coupon.sender_user_id > user.id
+Ref: gift_coupon.receiver_user_id > user.id
+Ref: gift_coupon_history.gift_coupon_id > gift_coupon.id

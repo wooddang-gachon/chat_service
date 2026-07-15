@@ -1,0 +1,171 @@
+{
+  "version": "2.0.0",
+  "darkMode": true,
+  "gridEnabling": false,
+  "currentViewName": null,
+  "defaultView": {
+    "detailLevel": "All",
+    "tablePositions": [
+      {
+        "name": "user",
+        "schemaName": "public",
+        "x": 1009.34228515625,
+        "y": 12
+      },
+      {
+        "name": "profile",
+        "schemaName": "public",
+        "x": 429.19384765625,
+        "y": 250
+      },
+      {
+        "name": "user_device",
+        "schemaName": "public",
+        "x": 429.19384765625,
+        "y": 12
+      },
+      {
+        "name": "user_backup",
+        "schemaName": "public",
+        "x": 1016.2571777343751,
+        "y": -297.87440892326543
+      },
+      {
+        "name": "friendship",
+        "schemaName": "public",
+        "x": 1597.629188632333,
+        "y": 153.32342016248063
+      },
+      {
+        "name": "multi_profile",
+        "schemaName": "public",
+        "x": 1602.316489595437,
+        "y": -593.1331364299565
+      },
+      {
+        "name": "multi_profile_friend",
+        "schemaName": "public",
+        "x": 1623.345054048562,
+        "y": -161.47886850514283
+      },
+      {
+        "name": "chat_room",
+        "schemaName": "public",
+        "x": 2021.4308327134104,
+        "y": 445.85658998554095
+      },
+      {
+        "name": "open_chat_room",
+        "schemaName": "public",
+        "x": 1571.44453125,
+        "y": 960
+      },
+      {
+        "name": "chat_room_member",
+        "schemaName": "public",
+        "x": 2519.342407349773,
+        "y": -88.74007460090041
+      },
+      {
+        "name": "chat_room_setting",
+        "schemaName": "public",
+        "x": 2497.766723756023,
+        "y": 234
+      },
+      {
+        "name": "message",
+        "schemaName": "public",
+        "x": 2494.9698086560065,
+        "y": 548.4236429572424
+      },
+      {
+        "name": "message_edit_history",
+        "schemaName": "public",
+        "x": 3103.989916407292,
+        "y": 200.48142989845888
+      },
+      {
+        "name": "message_read",
+        "schemaName": "public",
+        "x": 2545.339845956457,
+        "y": 1027.003842089974
+      },
+      {
+        "name": "open_chat_blacklist",
+        "schemaName": "public",
+        "x": 1571.44453125,
+        "y": 1199
+      },
+      {
+        "name": "emoticon_pack",
+        "schemaName": "public",
+        "x": 429.19384765625,
+        "y": 790
+      },
+      {
+        "name": "emoticon",
+        "schemaName": "public",
+        "x": 945.1710579429495,
+        "y": 1338.6398968681272
+      },
+      {
+        "name": "store_emoticon",
+        "schemaName": "public",
+        "x": 1009.34228515625,
+        "y": 303
+      },
+      {
+        "name": "mini_emoticon",
+        "schemaName": "public",
+        "x": 921.9827801056023,
+        "y": 1524.0828297274759
+      },
+      {
+        "name": "user_emoticon_license",
+        "schemaName": "public",
+        "x": 867.0158814937167,
+        "y": 878
+      },
+      {
+        "name": "calendar_event",
+        "schemaName": "public",
+        "x": 1571.44453125,
+        "y": 1632
+      },
+      {
+        "name": "calendar_attendee",
+        "schemaName": "public",
+        "x": 2116.4797349940545,
+        "y": 738.1216381712727
+      },
+      {
+        "name": "media_file",
+        "schemaName": "public",
+        "x": 3183.607072140262,
+        "y": 516.9705439768657
+      },
+      {
+        "name": "business_message",
+        "schemaName": "public",
+        "x": 12,
+        "y": 12
+      },
+      {
+        "name": "gift_coupon",
+        "schemaName": "public",
+        "x": 1571.44453125,
+        "y": 1998
+      },
+      {
+        "name": "gift_coupon_history",
+        "schemaName": "public",
+        "x": 2049.8612985644268,
+        "y": 983.6145943396536
+      }
+    ],
+    "tableGroupCollapseStates": [],
+    "stickyNoteLayouts": [],
+    "referencePaths": []
+  },
+  "views": {}
+}
