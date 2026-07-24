@@ -1,0 +1,1054 @@
+{
+  "version": "2.0.0",
+  "darkMode": true,
+  "gridEnabling": true,
+  "currentViewName": null,
+  "defaultView": {
+    "detailLevel": "All",
+    "tablePositions": [
+      {
+        "name": "USERS",
+        "schemaName": "public",
+        "x": 149.58642578125,
+        "y": 629
+      },
+      {
+        "name": "USER_SESSIONS",
+        "schemaName": "public",
+        "x": 141.58642578125,
+        "y": 1101
+      },
+      {
+        "name": "USER_BACKUPS",
+        "schemaName": "public",
+        "x": 701.58642578125,
+        "y": -11
+      },
+      {
+        "name": "PROFILES",
+        "schemaName": "public",
+        "x": -394.41357421875,
+        "y": 629
+      },
+      {
+        "name": "USER_BIRTHDAYS",
+        "schemaName": "public",
+        "x": -362.0829521494567,
+        "y": 973
+      },
+      {
+        "name": "MULTI_PROFILES",
+        "schemaName": "public",
+        "x": 165.58642578125,
+        "y": 1365
+      },
+      {
+        "name": "FRIENDSHIPS",
+        "schemaName": "public",
+        "x": 1181.8857421875,
+        "y": 1672
+      },
+      {
+        "name": "MULTI_PROFILE_MAPPINGS",
+        "schemaName": "public",
+        "x": 237.58642578125,
+        "y": 1721.8197867304398
+      },
+      {
+        "name": "CHAT_ROOMS",
+        "schemaName": "public",
+        "x": 1805.58642578125,
+        "y": 1917
+      },
+      {
+        "name": "NORMAL_CHAT_ROOMS",
+        "schemaName": "public",
+        "x": 1821.58642578125,
+        "y": 2405
+      },
+      {
+        "name": "OPEN_CHAT_ROOMS",
+        "schemaName": "public",
+        "x": 1181.8857421875,
+        "y": 1975
+      },
+      {
+        "name": "CHAT_ROOM_PARTICIPANTS",
+        "schemaName": "public",
+        "x": 2246.1146292215067,
+        "y": -51
+      },
+      {
+        "name": "CHAT_ROOM_PERSONAL_SETTINGS",
+        "schemaName": "public",
+        "x": 2919.759872099672,
+        "y": 165
+      },
+      {
+        "name": "OPEN_CHAT_PARTICIPANT_PROFILES",
+        "schemaName": "public",
+        "x": 2702.1146292215067,
+        "y": -27
+      },
+      {
+        "name": "OPEN_CHAT_BLACKLISTS",
+        "schemaName": "public",
+        "x": 1085.58642578125,
+        "y": 1245
+      },
+      {
+        "name": "MESSAGES",
+        "schemaName": "public",
+        "x": 2245.58642578125,
+        "y": 1197
+      },
+      {
+        "name": "TEXT_MESSAGES",
+        "schemaName": "public",
+        "x": 3456,
+        "y": 1512
+      },
+      {
+        "name": "MEDIA_MESSAGES",
+        "schemaName": "public",
+        "x": 3414.42041015625,
+        "y": 1781.9999999999998
+      },
+      {
+        "name": "EMOTICON_PACKAGES",
+        "schemaName": "public",
+        "x": 197.58642578125,
+        "y": 2429.0865659028805
+      },
+      {
+        "name": "EMOTICONS",
+        "schemaName": "public",
+        "x": 205.58642578125,
+        "y": 2709.0865659028805
+      },
+      {
+        "name": "EMOTICON_MESSAGES",
+        "schemaName": "public",
+        "x": 1181.8857421875,
+        "y": 2182
+      },
+      {
+        "name": "SHARE_MESSAGES",
+        "schemaName": "public",
+        "x": 3453.2748712778175,
+        "y": 2168
+      },
+      {
+        "name": "MESSAGE_EDIT_HISTORIES",
+        "schemaName": "public",
+        "x": 3398.36396484375,
+        "y": 482
+      },
+      {
+        "name": "MESSAGE_REPLIES",
+        "schemaName": "public",
+        "x": 3398.36396484375,
+        "y": 688
+      },
+      {
+        "name": "MESSAGE_MENTIONS",
+        "schemaName": "public",
+        "x": 3398.36396484375,
+        "y": 862
+      },
+      {
+        "name": "CHAT_NOTICES",
+        "schemaName": "public",
+        "x": 3398.36396484375,
+        "y": 1036
+      },
+      {
+        "name": "DRAWER_SUBSCRIPTIONS",
+        "schemaName": "public",
+        "x": -354.41357421875,
+        "y": 1558.3842058368111
+      },
+      {
+        "name": "USER_EMOTICON_LICENSES",
+        "schemaName": "public",
+        "x": 197.58642578125,
+        "y": 2157
+      },
+      {
+        "name": "USER_SUBSCRIPTIONS",
+        "schemaName": "public",
+        "x": -357.40107931499927,
+        "y": 1749
+      },
+      {
+        "name": "EMOTICON_RECOMMEND_TAGS",
+        "schemaName": "public",
+        "x": 253.58642578125,
+        "y": 2925.0865659028805
+      },
+      {
+        "name": "TEXT_EMOJI_MAPPINGS",
+        "schemaName": "public",
+        "x": 397.58642578125,
+        "y": -435
+      },
+      {
+        "name": "CALENDAR_EVENTS",
+        "schemaName": "public",
+        "x": 2600,
+        "y": 1744
+      },
+      {
+        "name": "CALENDAR_EVENT_ATTENDEES",
+        "schemaName": "public",
+        "x": 3398.36396484375,
+        "y": 1274
+      },
+      {
+        "name": "BIZ_MESSAGES",
+        "schemaName": "public",
+        "x": 1661.58642578125,
+        "y": -483
+      },
+      {
+        "name": "BIZ_MESSAGE_DELIVERIES",
+        "schemaName": "public",
+        "x": 2053.58642578125,
+        "y": -475
+      },
+      {
+        "name": "USER_ACQUISITIONS",
+        "schemaName": "public",
+        "x": -369.83093490148974,
+        "y": 1221
+      },
+      {
+        "name": "BEHAVIOR_LOGS",
+        "schemaName": "public",
+        "x": 779.22900390625,
+        "y": -435
+      },
+      {
+        "name": "CART_ITEMS",
+        "schemaName": "public",
+        "x": 229.58642578125,
+        "y": 31.210175607675637
+      },
+      {
+        "name": "GIFT_COUPONS",
+        "schemaName": "public",
+        "x": -306.41357421875,
+        "y": -307
+      },
+      {
+        "name": "GIFT_COUPON_HISTORIES",
+        "schemaName": "public",
+        "x": -2.41357421875,
+        "y": -667
+      },
+      {
+        "name": "GIFT_COUPON_ARCHIVES",
+        "schemaName": "public",
+        "x": 1127.1015625,
+        "y": -435
+      },
+      {
+        "name": "PROFILE_ASSETS",
+        "schemaName": "public",
+        "x": -306.41357421875,
+        "y": 92
+      },
+      {
+        "name": "MESSAGE_REACTIONS",
+        "schemaName": "public",
+        "x": 1141.58642578125,
+        "y": 933
+      }
+    ],
+    "tableGroupCollapseStates": [],
+    "stickyNoteLayouts": [],
+    "referencePaths": [
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "USER_SESSIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "USER_BACKUPS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "PROFILES",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "USER_BIRTHDAYS",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "MULTI_PROFILES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "FRIENDSHIPS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "friend_user_id"
+        ],
+        "firstTableName": "FRIENDSHIPS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "multi_profile_id"
+        ],
+        "firstTableName": "MULTI_PROFILE_MAPPINGS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MULTI_PROFILES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "friendship_id"
+        ],
+        "firstTableName": "MULTI_PROFILE_MAPPINGS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "FRIENDSHIPS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "chat_room_id"
+        ],
+        "firstTableName": "NORMAL_CHAT_ROOMS",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOMS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "chat_room_id"
+        ],
+        "firstTableName": "OPEN_CHAT_ROOMS",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOMS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "owner_user_id"
+        ],
+        "firstTableName": "OPEN_CHAT_ROOMS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "chat_room_id"
+        ],
+        "firstTableName": "CHAT_ROOM_PARTICIPANTS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOMS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "CHAT_ROOM_PARTICIPANTS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "participant_id"
+        ],
+        "firstTableName": "CHAT_ROOM_PERSONAL_SETTINGS",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOM_PARTICIPANTS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "participant_id"
+        ],
+        "firstTableName": "OPEN_CHAT_PARTICIPANT_PROFILES",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOM_PARTICIPANTS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "chat_room_id"
+        ],
+        "firstTableName": "OPEN_CHAT_BLACKLISTS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOMS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "blocked_user_id"
+        ],
+        "firstTableName": "OPEN_CHAT_BLACKLISTS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "chat_room_id"
+        ],
+        "firstTableName": "MESSAGES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOMS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "sender_id"
+        ],
+        "firstTableName": "MESSAGES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "TEXT_MESSAGES",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "MEDIA_MESSAGES",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "EMOTICON_MESSAGES",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "package_id"
+        ],
+        "firstTableName": "EMOTICONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "EMOTICON_PACKAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "emoticon_id"
+        ],
+        "firstTableName": "EMOTICON_MESSAGES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "EMOTICONS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "SHARE_MESSAGES",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "MESSAGE_EDIT_HISTORIES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "parent_message_id"
+        ],
+        "firstTableName": "MESSAGE_REPLIES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "child_message_id"
+        ],
+        "firstTableName": "MESSAGE_REPLIES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "MESSAGE_MENTIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "target_user_id"
+        ],
+        "firstTableName": "MESSAGE_MENTIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "chat_room_id"
+        ],
+        "firstTableName": "CHAT_NOTICES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOMS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "CHAT_NOTICES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "creator_id"
+        ],
+        "firstTableName": "CHAT_NOTICES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "DRAWER_SUBSCRIPTIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "USER_EMOTICON_LICENSES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "package_id"
+        ],
+        "firstTableName": "USER_EMOTICON_LICENSES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "EMOTICON_PACKAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "USER_SUBSCRIPTIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "emoticon_id"
+        ],
+        "firstTableName": "EMOTICON_RECOMMEND_TAGS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "EMOTICONS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "chat_room_id"
+        ],
+        "firstTableName": "CALENDAR_EVENTS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CHAT_ROOMS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "creator_id"
+        ],
+        "firstTableName": "CALENDAR_EVENTS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "event_id"
+        ],
+        "firstTableName": "CALENDAR_EVENT_ATTENDEES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "CALENDAR_EVENTS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "CALENDAR_EVENT_ATTENDEES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "biz_message_id"
+        ],
+        "firstTableName": "BIZ_MESSAGE_DELIVERIES",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "BIZ_MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "USER_ACQUISITIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "CART_ITEMS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "sender_user_id"
+        ],
+        "firstTableName": "GIFT_COUPONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "receiver_user_id"
+        ],
+        "firstTableName": "GIFT_COUPONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "gift_coupon_id"
+        ],
+        "firstTableName": "GIFT_COUPON_HISTORIES",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "GIFT_COUPONS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "PROFILE_ASSETS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "message_id"
+        ],
+        "firstTableName": "MESSAGE_REACTIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "MESSAGES",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "user_id"
+        ],
+        "firstTableName": "MESSAGE_REACTIONS",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "id"
+        ],
+        "secondTableName": "USERS",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      }
+    ]
+  },
+  "views": {}
+}
